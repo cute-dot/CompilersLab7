@@ -15,10 +15,11 @@
 ```bash
 sudo apt install clang llvm graphviz
 ```
-![Установка_CLANG](![image](https://github.com/user-attachments/assets/d755fca3-1278-4227-866a-201c946514c8))
-![Установка_Graphviz](![image](https://github.com/user-attachments/assets/42a426b4-6a35-49d4-a124-d8580f843296))
+![image](https://github.com/user-attachments/assets/102b0ee1-8af3-47ee-b6e7-fd590efa9bd2)
+![image](https://github.com/user-attachments/assets/b884b1d8-5b4c-40a6-ba31-a6362d80838b)
+
 ### 2. Создание файла C
-![Код](![image](https://github.com/user-attachments/assets/7b0276d2-191a-44ba-afd1-513fb52a43cb))
+![image](https://github.com/user-attachments/assets/d738e3f8-f2c5-412b-8907-ede73bbd2338)
 
 ### 3. Получение AST
 
@@ -35,13 +36,14 @@ AST точно отражает структуру программы, вклю�
 ```bash
 -Xclang -ast-dump -fsyntax-only main.c
 ```
-![clang](![image](https://github.com/user-attachments/assets/3a056b14-b983-40ea-aa3e-e7fb45fe9234))
+![image](https://github.com/user-attachments/assets/3de469a8-d83e-4a4a-8f93-23a47fd57540)
+
 ### 4. Генерация LLVM IR
 Команда:
 ```bash
 clang -S -emit-llvm main.c -o main.ll
 ```
-![Файл](![image](https://github.com/user-attachments/assets/b9121a66-446b-4fb3-b588-8872506d2aec))
+![image](https://github.com/user-attachments/assets/43c8bdcb-a949-4dc9-be68-e2e14e51944c)
 
 ### 5. Оптимизация IR
 **Шаг 1: Генерация неоптимизированного IR (O0):**
